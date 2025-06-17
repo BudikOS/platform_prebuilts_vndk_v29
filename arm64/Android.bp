@@ -4928,3 +4928,60 @@ vndk_prebuilt_shared {
         },
     },
 }
+
+vndk_prebuilt_shared {
+    name: "libeffectsconfig",
+    version: "29",
+    target_arch: "arm64",
+    vendor_available: true,
+    product_available: true,
+    vndk: {
+        enabled: true,
+    },
+    arch: {
+        arm64: {
+            srcs: ["arch-arm64-armv8-a/shared/vndk-core/libeffectsconfig.so"],
+        },
+        arm: {
+            srcs: ["arch-arm-armv8-a/shared/vndk-core/libeffectsconfig.so"]
+        },
+    },
+}
+
+vndk_prebuilt_shared {
+    name: "android.hardware.audio.common-util",
+    version: "29",
+    target_arch: "arm64",
+    vendor_available: true,
+    product_available: true,
+    vndk: {
+        enabled: true,
+    },
+    arch: {
+        arm64: {
+            srcs: ["arch-arm64-armv8-a/shared/vndk-core/android.hardware.audio.common-util.so"],
+        },
+        arm: {
+            srcs: ["arch-arm-armv8-a/shared/vndk-core/android.hardware.audio.common-util.so"]
+        },
+    },
+}
+
+vndk_prebuilt_shared {
+    name: "android.hardware.audio.common@5.0-util",
+    version: "29",
+    target_arch: "arm64",
+    vendor_available: true,
+    product_available: true,
+    vndk: {
+        enabled: true,
+    },
+    arch: {
+        arm64: {
+            srcs: ["arch-arm64-armv8-a/shared/vndk-core/android.hardware.audio.common@5.0-util.so"],
+        },
+        arm: {
+            srcs: ["arch-arm-armv8-a/shared/vndk-core/android.hardware.audio.common@5.0-util.so"]
+        },
+    },
+}
